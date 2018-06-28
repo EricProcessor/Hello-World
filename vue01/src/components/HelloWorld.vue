@@ -16,13 +16,22 @@
       <div class="list">
           <ul>
             <!-- <li v-for="name in names">{{ name }}</li> -->
-            <li v-for="name in names" >{{ name }}</li>
+            <li v-for="(name,index) in names" :key="index" >{{ name }}</li>
           </ul>
           <ul>
             <!-- <li v-for="name in names">{{ name }}</li> -->
             <li v-for="(name,index) in names" v-bind:key="index">{{ name }}---{{ index }}</li>
           </ul>
+          <ul>
+            <li v-for="(item,index) in user" :key="index">
+              <span> {{item.name}} </span> 
+              <span> {{item.age}} </span> 
+            </li>
+          </ul>
       </div>
+      <button v-on:click="num+=1">按钮</button>
+      <p>{{ num }}</p>
+      <button v-on:click="handleClick">es6的学习</button>
   </div>
 </template>
 
@@ -31,13 +40,36 @@ export default {
   name: "HelloWorld",
   data() {
     return {
+      num:1,
       hello: "hello VUE",
       flag: "我是flag",
       xhtml: "<span>这是一个span</span>",
       message: "Eric",
       ok: false,
-      names: ["allen", "tomas", "乔治"]
-    };
+      names: ["allen", "tomas", "乔治"],
+      user: [
+        {
+          id: 0,
+          name: "tomas",
+          age: "15"
+        },
+        {
+          id: 1,
+          name: "jack",
+          age: "25"
+        },
+        {
+          id: 2,
+          name: "james",
+          age: "35"
+        }
+      ]
+    }
+  },
+  methods:{
+     handleClick(){
+       console.log(this)
+     }
   }
 };
 </script>
