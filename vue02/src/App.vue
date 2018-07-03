@@ -1,26 +1,29 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <event/>
+    <!-- <event/> -->
+    <Formdata/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import event from './components/event'
+import HelloWorld from "./components/HelloWorld";
+import event from "./components/event";
+import Formdata from "./components/formdata";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
-    event
+    event,
+    Formdata
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
