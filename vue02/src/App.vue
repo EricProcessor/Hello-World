@@ -2,7 +2,8 @@
   <div id="app">
     <img src="./assets/logo.png">
     <!-- <event/> -->
-    <Formdata/>
+    <!-- <Formdata/> -->
+    <Styles/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HelloWorld from "./components/HelloWorld";
 import event from "./components/event";
 import Formdata from "./components/formdata";
+import Styles from "./components/style";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     event,
-    Formdata
+    Formdata,
+    Styles
   }
 };
 </script>

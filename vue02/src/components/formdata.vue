@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input v-model="inMes">
+        <input v-model.trim="inMes">
        <p>inMes is:{{ inMes }}</p>
         <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
         <label for="jack">Jack</label>
