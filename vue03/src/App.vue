@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
+    <HelloWorld />
     <Mc/>
   </div>
 </template>
@@ -27,4 +28,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+/* img{
+  width: 100px;
+} */
 </style>
