@@ -1,27 +1,21 @@
 <template>
   <div id="app">
-    <Navlist/>
+    <!-- <Navlist/> -->
     <router-view/>
   </div>
 </template>
 
 <script>
-import Navlist from "./components/NavList"
+// import Navlist from "./components/NavList"
 export default {
   name: 'App',
   components:{
-    Navlist
+    // Navlist
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+*{margin: 0;padding: 0;}
 </style>

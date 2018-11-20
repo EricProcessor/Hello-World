@@ -1,9 +1,9 @@
 <template>
  <div>
      <ul>
-         <li>首页</li>
-         <li>课程</li>
-         <li>专家</li>
+         <li><router-link to="/">首页</router-link></li>
+         <li><router-link to="/course">课程</router-link></li>
+         <li> <router-link to="/master">专家</router-link></li>
      </ul>
  </div>
 </template>
@@ -30,6 +30,5 @@ div{
     line-height: 50px;
 }
 ul{list-style: none;}
-li{float: left;}
-*{margin: 0;padding: 0;}
+li{float: left;margin:0 20px;}
 </style>

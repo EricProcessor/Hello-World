@@ -1,21 +1,19 @@
 <template>
  <div>
-   <Navlist/>
-     主页
+     专家页面
  </div>
 </template>
 
 <script>
-import Navlist from "./NavList"
  export default {
-   name:"index",  
+   name:"master",  
    data () {
      return {
 
      }
    },
    components: {
-    Navlist
+
    }
  }
 </script>
