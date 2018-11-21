@@ -1,6 +1,6 @@
 <template>
  <div>
-     专家页面
+     专家页面{{$route.params.count}}---{{$route.params.type}}
  </div>
 </template>
 

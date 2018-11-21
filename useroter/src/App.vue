@@ -18,4 +18,7 @@ export default {
 <style>
 
 *{margin: 0;padding: 0;}
+.active{
+  color: red;
+}
 </style>

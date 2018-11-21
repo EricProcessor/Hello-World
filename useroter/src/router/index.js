@@ -9,6 +9,7 @@ import Web from '@/components/pages/web'
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass:"active",
   routes: [
     {
       path:'/',
@@ -33,7 +34,7 @@ export default new Router({
     ]
     },
     {
-      path:'/master',
+      path:'/master/:count',
       name:'master',
       component:Master
     }
