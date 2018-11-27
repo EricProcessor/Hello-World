@@ -3,7 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { Button,  Carousel,
+  CarouselItem,} from 'element-ui';
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+import VueLazyload from 'vue-lazyload'
 
+Vue.use(VueLazyload)
+Vue.use(Button);
+Vue.use(Carousel);
+Vue.use(CarouselItem);
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
