@@ -6,16 +6,27 @@ import 'es6-promise/auto'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
-// const store = new Vuex.Store({
-//   state: {
-//     count: 0
-//   },
-//   mutations: {
-//     increment (state) {
-//       state.count++
-//     }
-//   }
-// })
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    },
+    reduce(state) {
+      state.count--
+    }
+  },
+  actions:{
+    increment(context){
+      context.commit("increment")
+    },
+    reduce(context){
+      context.commit("reduce")
+    }
+  }
+})
 // store.commit('increment')
 
 // console.log(store.state.count)
@@ -25,5 +36,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   components: { App },
+  store,
   template: '<App/>'
 })

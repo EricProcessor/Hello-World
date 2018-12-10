@@ -1,19 +1,24 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <Vuex/>
+    <Parent/>
+    <Outer/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
 import Vuex from './components/vuex'
+import Parent from './components/child/Parent'
+import Outer from './components/outer'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Vuex
+    Vuex,
+    Parent,
+    Outer
   }
 }
 </script>
